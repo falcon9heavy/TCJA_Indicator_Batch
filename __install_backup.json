@@ -1,0 +1,40 @@
+{
+  "allowOnDemand": true,
+  "appId": "50e2a95a-ab43-5c77-9123-d05d4aad7ae5",
+  "displayName": "Batch Template",
+  "features": [
+    "aotExecutionEnabled",
+    "appBuilderCompliant",
+    "fileParams"
+  ],
+  "labels": [],
+  "languageVersion": "3.9",
+  "listDelimiter": "|",
+  "note": "A template of a working ingress Organization App.",
+  "params": [
+    {
+      "label": "ThreatConnect Owner",
+      "name": "tc_owner",
+      "note": "The destination Owner in the ThreatConnect Platform.",
+      "required": true,
+      "sequence": 1,
+      "type": "Choice",
+      "validValues": [
+        "${OWNERS}"
+      ]
+    },
+    {
+      "label": "[HIDDEN] Disable SSL Validation",
+      "name": "tc_verify",
+      "required": true,
+      "type": "Boolean",
+      "default": false,
+      "hidden": true,
+      "sequence": 2
+    }
+  ],
+  "programLanguage": "PYTHON",
+  "programMain": "run",
+  "programVersion": "1.0.0",
+  "runtimeLevel": "Organization"
+}
