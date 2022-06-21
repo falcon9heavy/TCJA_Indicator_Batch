@@ -1,0 +1,62 @@
+{
+  ".coveragerc": {
+    "md5": "f9b4f291647aa1a952319822893c7a9f",
+    "sha": "0559a67b3cced473a0e3a4650f32e7f43d97ba44"
+  },
+  ".gitignore": {
+    "md5": "8ed44f41717e8e104a227d228d1a6b23",
+    "sha": "a49476ef8124da25791f28287d8ebb3b975ed84e"
+  },
+  ".pre-commit-config.yaml": {
+    "md5": "54f18c8693b4f5a508d4daf38cc030f2",
+    "sha": "110ed90f0d29600bbf04981933266f50a0995812"
+  },
+  "README.md": {
+    "md5": "b90bb00855284a1f0869e7b2f0a06adf",
+    "sha": "764d7e9630370046db3bc81606fa48a8ccae8b80"
+  },
+  "__main__.py": {
+    "md5": "5ad95d0c1f52c5abb15e009d0b8acd73",
+    "sha": "3068ac9f753260ce8f9bd862fbc8f5afcbfd1c30"
+  },
+  "app.py": {
+    "md5": "853f3193c6843e5f89dd1d1bfa0732d9",
+    "sha": "7db5ac39ab82746e273445a203ab000be8f52774"
+  },
+  "app_inputs.py": {
+    "md5": "c894ea28e485d5e8da8306387ac5a081",
+    "sha": "07f67de6dff15f9d5cb28e433e58a28209b03ffd"
+  },
+  "app_lib.py": {
+    "md5": "6b6fcf43059420e0e7f2ca2d50b98592",
+    "sha": "ba038b8ce67c60be97674c83fe99f8e4fd50e05c"
+  },
+  "install.json": {
+    "md5": "765d8f567caabd499aeccb727c4f4a56",
+    "sha": "dc20f1de23270b7fd4984b0449756b315989bd8e"
+  },
+  "job_app.py": {
+    "md5": "70ecad84da92138c68f6c44a50604649",
+    "sha": "32bb897401735f59ee11bd04936de909e71010dc"
+  },
+  "pyproject.toml": {
+    "md5": "e4cb3908717e364a9a40e8f7d6a44700",
+    "sha": "b03d20a894de0001aca5469756f986c9ba0d8bfe"
+  },
+  "requirements.txt": {
+    "md5": "17f633190e90e4d610666be274ee18c9",
+    "sha": "e1c0b4f0b7665fedc148c6b5fcf8926b01a33a6a"
+  },
+  "run.py": {
+    "md5": "e227d56410a6e98bcc8e8fe849e23f4c",
+    "sha": "99dbcae5af1ea41f95b0db076866b8b703e24223"
+  },
+  "setup.cfg": {
+    "md5": "4d64633a84434e91bc83ac81b762c6ee",
+    "sha": "d27fa2f0bb8118bcd28b6f8948b0a224b927391a"
+  },
+  "tcex.json": {
+    "md5": "62a6af26670db838c4ae0a53453d596b",
+    "sha": "690bf011009851d18f3771ad488fbc5e6df1ccd8"
+  }
+}
