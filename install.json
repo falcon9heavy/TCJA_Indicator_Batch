@@ -1,0 +1,47 @@
+{
+  "allowOnDemand": true,
+  "appId": "50e2a95a-ab43-5c77-9123-d05d4aad7ae5",
+  "displayName": "Indicator Deletion",
+  "features": [
+    "aotExecutionEnabled",
+    "appBuilderCompliant",
+    "fileParams"
+  ],
+  "labels": [],
+  "languageVersion": "3.9",
+  "listDelimiter": "|",
+  "note": "App to delete indicators using batch.",
+  "params": [
+    {
+      "label": "ThreatConnect Owner",
+      "name": "tc_owner",
+      "note": "The destination Owner in the ThreatConnect Platform.",
+      "required": true,
+      "sequence": 1,
+      "type": "Choice",
+      "validValues": [
+        "${OWNERS}"
+      ]
+    },
+    {
+      "default": "info",
+      "label": "ThreatConnect log level",
+      "name": "tc_log_level",
+      "note": "Level of logging to set for ThreatConnect",
+      "required": true,
+      "sequence": 16,
+      "type": "Choice",
+      "validValues": [
+        "trace",
+        "debug",
+        "info",
+        "warning",
+        "error"
+      ]
+    }
+  ],
+  "programLanguage": "PYTHON",
+  "programMain": "run",
+  "programVersion": "1.0.0",
+  "runtimeLevel": "Organization"
+}

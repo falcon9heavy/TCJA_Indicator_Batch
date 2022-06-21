@@ -1,0 +1,2 @@
+pydantic
+tcex==3.0.0b1
