@@ -1,4 +1,8 @@
 """ThreatConnect Job App"""
+
+# Update Jun 30 with tcex 3.0.3
+# Fix includes the batch delete issue, allegedly
+
 # standard library
 from tcex.api.tc.v3.tql.tql_operator import TqlOperator
 from tcex import TcEx
