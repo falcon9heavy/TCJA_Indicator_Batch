@@ -1,7 +1,7 @@
 {
   "allowOnDemand": true,
   "appId": "50e2a95a-ab43-5c77-9123-d05d4aad7ae5",
-  "displayName": "Indicator Deletion",
+  "displayName": "TC Indicator Deleter",
   "features": [
     "aotExecutionEnabled",
     "appBuilderCompliant",

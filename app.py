@@ -20,7 +20,7 @@ from tcex.exit import ExitCode
 Delete all IP Addresses with these conditions:
 
     indicator type: address
-    owner: TAE_RG community
+    owner: {target}} community
     confidence: 0 or Null
     targeting_status = Available
 
@@ -64,9 +64,9 @@ class App(JobApp):
             indicators.filter.tql = (
                 'typeName in ("Address") and '
                 f'ownerName in ("{self.inputs.model.tc_owner}") and '
-                f'dateAdded >= "{d2.isoformat()}" and dateAdded < "{d.isoformat()}" and'
+                f'dateAdded >= "{d2.isoformat()}" and dateAdded < "{d.isoformat()}" and '
                 'attributeTargeting_Status like "Available" and '
-                '(confidence = 0 or confidence is null) '
+                '(confidence = 0 or confidence is null)'
                 )
 
             # get to a point where there are no indicators left and break the loop
@@ -86,6 +86,5 @@ class App(JobApp):
                 self.log.info(f'batch-status={batch_status}')
                 d = d2
                 d2 = d - timedelta(days=7)
-
             else:
                 break
