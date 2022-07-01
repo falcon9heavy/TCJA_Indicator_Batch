@@ -56,7 +56,7 @@ class App(JobApp):
 
         while True:
             # create a unique batch for each run
-            batch: 'Batch' = self.tcex.v2.batch('Org1', action='Delete')
+#            batch: 'Batch' = self.tcex.v2.batch('Org1', action='Delete')
             indicators = self.tcex.v3.indicators(params={'sorting': 'id ASC'})
 
             # tql that matched the criteria set in the requirement
@@ -77,13 +77,14 @@ class App(JobApp):
             # create batch entry
             if d2 > start:
                 for indicator in indicators:
-                    ip_address = batch.address(f'{indicator.model.summary}')
+    #                ip_address = batch.address(f'{indicator.model.summary}')
                     self.log.info(f' target for deletion => {indicator.model.summary}')
+                    indicator.delete()
                     # load it up
-                    batch.save(ip_address)
-                self.log.info('#### Submitting to batch ####')
-                batch_status: list = batch.submit_all()
-                self.log.info(f'batch-status={batch_status}')
+    #                batch.save(ip_address)
+    #            self.log.info('#### Submitting to batch ####')
+    #            batch_status: list = batch.submit_all()
+    #            self.log.info(f'batch-status={batch_status}')
                 d = d2
                 d2 = d - timedelta(days=7)
             else:
